@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+  Scanner examen = new Scanner(System.in);
+  double notaMayor= -1;
+  double notaAlumno1;
+  System.out.println("     LISTADO DE NOTAS    ");
+  System.out.println("Ingrese Nota del Primer Alumno= ");
+
+  notaAlumno1 = examen.nextDouble();
+
+  System.out.println("nota= " + notaAlumno1);
+  System.out.println("Ingrese Nota del Segundo Alumno");
+  notaAlumno1 = examen.nextDouble();
+  System.out.println("nota= " + notaAlumno1);
+
+  double alumno2;
+  System.out.println("Ingrese Nota del Segundo Alumno");
+  alumno2 = examen.nextDouble();
+  System.out.println("nota= " + alumno2);
+
+  double alumno3;
+  System.out.println("Ingrese Nota del Tercer Alumno");
+  alumno3 = examen.nextDouble();
+  System.out.println("nota= " + alumno3);
+
+  double alumno4;
+  System.out.println("Ingrese Nota del Cuarto Alumno");
+  alumno4 = examen.nextDouble();
+  System.out.println("nota= " + alumno4);
+
+  double alumno5;
+  System.out.println("Ingrese Nota del Quinto Alumno");
+  alumno5 = examen.nextDouble();
+  System.out.println("nota= " + alumno5);
+
+  double notaMedia = (notaAlumno1 + alumno2 + alumno3 + alumno4 + alumno5) / 5;
+  System.out.println("la media es  = " + notaMedia);
+
+  if (notaAlumno1 < notaMedia) {
+    System.out.println("alumno 1 esta por debajo de la nota media ");
+  } else if (notaAlumno1 > notaMedia) {
+    System.out.println("alumno 1 esta por encima de la nota media ");
+  }
+
+  if (alumno2 < notaMedia) {
+    System.out.println("alumno 2 esta por debajo de la nota media ");
+  } else if (alumno2 > notaMedia) {
+    System.out.println("alumno 2 esta por encima de la nota media ");
+  }
+
+  if (alumno3 < notaMedia) {
+    System.out.println("alumno 3 esta por debajo de la nota media ");
+  } else if (alumno3 > notaMedia) {
+    System.out.println("alumno 3 esta por encima de la nota media ");
+  }
+  if (alumno4 < notaMedia) {
+    System.out.println("alumno 4 esta por debajo de la nota media ");
+  } else if (alumno4 > notaMedia) {
+    System.out.println("alumno 4 esta por encima de la nota media");
+  }
+  if (alumno5 < notaMedia) {
+    System.out.println("alumno 5 esta por debajo de la nota media ");
+  } else if (alumno5 > notaMedia) {
+    System.out.println("alumno 5 esta por encima de la nota media");
+  }
+
+}
+}
